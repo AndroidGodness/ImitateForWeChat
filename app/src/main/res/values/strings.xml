@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ImitateForWeChat</string>
+    <string name="news">消息</string>
+    <string name="dynamic">动态</string>
+    <string name="contact">联系人</string>
+    <string name="setting">设置</string>
+</resources>
