@@ -4,4 +4,16 @@
     <string name="dynamic">动态</string>
     <string name="contact">联系人</string>
     <string name="setting">设置</string>
+    <string name="text_we_chat">微信</string>
+    <string name="friend_text">朋友圈</string>
+    <string name="oneSweep">扫一扫</string>
+    <string name="shake">摇一摇</string>
+    <string name="nearby">附近的人</string>
+    <string name="drift_bottle">漂流瓶</string>
+    <string name="shopping">购物</string>
+    <string name="game">游戏</string>
+    <string name="begin_chat">发起群聊</string>
+    <string name="add_friend">添加朋友</string>
+    <string name="collect_money">收付款</string>
+    <string name="help_feedback">帮助与反馈</string>
 </resources>

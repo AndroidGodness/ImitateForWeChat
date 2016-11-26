@@ -1,23 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background = "@drawable/app_background">
 
+    <!--动态布局中朋友圈-->
+        <LinearLayout
+            android:id="@+id/line_friend"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white">
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:src = "@drawable/friend_img"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_gravity = "center_vertical"
+                android:textSize="@dimen/text_size"
+                android:text="@string/friend_text"/>
+        </LinearLayout>
+
+    <!--扫一扫-->
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:orientation = "vertical">
+        android:id="@+id/line_oneSweep"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:layout_marginTop="15dp">
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src = "@drawable/dynamic_selected"/>
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src = "@drawable/one_sweep"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity = "center_vertical"
+            android:textSize="@dimen/text_size"
+            android:layout_marginStart="15dp"
+            android:text="@string/oneSweep"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:src = "@drawable/divider"
+        android:background="@android:color/white"/>
+    <!--摇一摇-->
+    <LinearLayout
+        android:id="@+id/line_shake"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@android:color/white">
 
-            android:text = "这是动态界面"/>
-
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src = "@drawable/shake"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity = "center_vertical"
+            android:textSize="@dimen/text_size"
+            android:layout_marginStart="15dp"
+            android:text="@string/shake"/>
     </LinearLayout>
 
-</RelativeLayout>
+    <!--附近的人-->
+    <LinearLayout
+        android:id="@+id/line_nearby"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:background="@android:color/white">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src = "@drawable/nearby"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity = "center_vertical"
+            android:textSize="@dimen/text_size"
+            android:layout_marginStart="15dp"
+            android:text="@string/nearby"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:src = "@drawable/divider"/>
+
+    <!--漂流瓶-->
+    <LinearLayout
+        android:id="@+id/line_drift_bottle"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/drift_bottle"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/drift_bottle"
+            android:layout_gravity = "center_vertical"
+            android:textSize="@dimen/text_size"
+            android:layout_marginStart="15dp"/>
+    </LinearLayout>
+
+    <!--购物-->
+    <LinearLayout
+        android:id="@+id/line_shopping"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src = "@drawable/shopping"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity = "center_vertical"
+            android:textSize="@dimen/text_size"
+            android:text="@string/shopping"
+            android:layout_marginStart="15dp"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:src = "@drawable/divider"/>
+
+    <!--游戏-->
+    <LinearLayout
+        android:id="@+id/line_game"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src = "@drawable/game"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/text_size"
+            android:layout_marginStart="15dp"
+            android:text="@string/game"/>
+    </LinearLayout>
+
+
+</LinearLayout>

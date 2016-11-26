@@ -14,11 +14,16 @@ import com.example.toluene.imitateforwechat.R;
  */
 
 public class DynamicFragment extends Fragment {
+
+    View dynamicLayout;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View dynamicLayout = inflater.inflate(R.layout.dynamic_layout,container,false);
+        dynamicLayout = inflater.inflate(R.layout.dynamic_layout,container,false);
         return dynamicLayout;
+
     }
+
+
 }
