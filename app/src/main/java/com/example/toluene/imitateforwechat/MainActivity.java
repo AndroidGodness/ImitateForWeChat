@@ -32,6 +32,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     protected View dynamicLayout;    //activity_main中动态布局id
     protected View newsLayout;       //activity_main中消息布局id
     protected View settingLayout;    //activity_main中设置布局id
+    protected View main_bottom_navigate;
 
     private ImageView contactImage;  //联系人图片id
     private ImageView dynamicImage;  //动态图片id
@@ -75,6 +76,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
         dynamicLayout = findViewById(R.id.dynamic_Layout);
         contactLayout =findViewById(R.id.contact_Layout);
         settingLayout = findViewById(R.id.setting_Layout);
+
+        main_bottom_navigate = findViewById(R.id.main_bottom_navigate);
 
         //注册布局监听器
         newsLayout.setOnClickListener(this);

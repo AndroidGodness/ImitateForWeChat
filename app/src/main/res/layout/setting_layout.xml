@@ -1,26 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background = "@drawable/app_background"
+    android:orientation = "vertical">
+
+    <FrameLayout
+        android:id="@+id/frame_setting"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </FrameLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:orientation = "vertical">
+        android:id="@+id/setting_chat"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background = "@android:color/white"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp">
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src = "@drawable/setting_selected"
-            android:id="@+id/imageView2" />
-
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src = "@drawable/setting_chat"
+            android:layout_marginStart="10dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity = "center_horizontal"
-            android:text = "这是设置界面"/>
+            android:text="@string/setting"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/text_size"
+            android:layout_marginStart="15dp"/>
 
     </LinearLayout>
 
-</RelativeLayout>
+
+</LinearLayout>

@@ -16,4 +16,6 @@
     <string name="add_friend">添加朋友</string>
     <string name="collect_money">收付款</string>
     <string name="help_feedback">帮助与反馈</string>
+    <string name="about_chat">关于微信</string>
+    <string name="exited">退出</string>
 </resources>
